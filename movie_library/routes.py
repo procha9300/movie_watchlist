@@ -11,8 +11,8 @@ from flask import (
     abort, 
     flash
 )
-from forms import MovieForm, ExtendedMovieForm, RegisterFrom, LoginFrom
-from models import Movie, User
+from movie_library.forms import MovieForm, ExtendedMovieForm, RegisterFrom, LoginFrom
+from movie_library.models import Movie, User
 from dataclasses import asdict
 import datetime
 from passlib.hash import pbkdf2_sha256
